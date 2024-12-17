@@ -1,9 +1,3 @@
-<?php
-// $title = $pageTitle;
-$backgroundImageSrc = 'images/pexels-julia-volk-5273044.jpg';
-$newbackground = 'images/pexels-lisa-fotios-1126728.jpg';
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,7 +11,7 @@ $newbackground = 'images/pexels-lisa-fotios-1126728.jpg';
 
 <body>
 
-  <header class="header-with-background" style="background-image: url('<?php echo $newbackground ?>')">
+  <header class="header-with-background" style="background-image: url('<?php echo $headerImg ?>')">
     <h1>
       Culinary Cove
     </h1>
@@ -25,6 +19,7 @@ $newbackground = 'images/pexels-lisa-fotios-1126728.jpg';
     <nav>
       <a href="our-mission.php">Our mission</a>
       <a href="ingredients.php">Ingredients</a>
+      <a href="menu.php">Menu</a>
 
     </nav>
   </header>
