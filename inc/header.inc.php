@@ -1,3 +1,9 @@
+<?php
+// $title = $pageTitle;
+$backgroundImageSrc = 'images/pexels-julia-volk-5273044.jpg';
+$newbackground = 'images/pexels-lisa-fotios-1126728.jpg';
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,12 +12,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./styles/simple.css" />
   <link rel="stylesheet" href="./styles/custom.css" />
-  <title>Culinary Cove &bull; Our mission</title>
+  <title>Culinary Cove &bull; <?php echo $pageTitle; ?></title>
 </head>
 
 <body>
 
-  <header class="header-with-background" style="background-image: url('images/pexels-julia-volk-5273044.jpg')">
+  <header class="header-with-background" style="background-image: url('<?php echo $newbackground ?>')">
     <h1>
       Culinary Cove
     </h1>
