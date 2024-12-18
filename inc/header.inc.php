@@ -1,3 +1,14 @@
+<?php 
+    if(empty($pageTitle)){
+      $pageTitle = 'Restaurant';
+    }
+    if(empty($headerImg)){
+      $headerImg = 'images/pexels-rachel-claire-4577740.jpg';
+    }
+    // if(){
+
+    // }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,9 +28,9 @@
     </h1>
     <p>Your sanctuary for exceptional flavors</p>
     <nav>
-      <a href="our-mission.php">Our mission</a>
-      <a href="ingredients.php">Ingredients</a>
-      <a href="menu.php">Menu</a>
+      <a class="<?php echo (!empty($pagekey) && $pagekey==='mission')?'active':'' ?>" href="our-mission.php">Our mission</a>
+      <a class="<?php echo (!empty($pagekey) &&$pagekey==='ingredients')?'active':'' ?>" href="ingredients.php">Ingredients</a>
+      <a class="<?php echo (!empty($pagekey) &&$pagekey==='menu')?'active':'' ?>" href="menu.php">Menu</a>
 
     </nav>
   </header>
